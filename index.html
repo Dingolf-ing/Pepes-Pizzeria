@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Pepes Pizzeria – dingolf.ing Demo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.5;
+    }
+    header {
+      background: #c0392b;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem 3rem;
+      position: relative;
+    }
+    /* Badge im Header */
+    .badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 80px;
+      height: 80px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section + section {
+      margin-top: 3rem;
+    }
+    h2 {
+      border-bottom: 2px solid #c0392b;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+      color: #c0392b;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed #ccc;
+    }
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+    .hours, .contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 2rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin: 4rem 0 2rem;
+    }
+    @media (max-width: 600px) {
+      .hours, .contact {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Badge-Integration -->
+  <img src="/images/badge.png" alt="dingolf.ing Badge" class="badge">
+
+  <h1>Pepes Pizzeria</h1>
+  <p><em>Your taste of Italy in the heart of Dingolfing</em></p>
+  <p><strong>Subdomain:</strong> pepes-pizzeria.dingolf.ing</p>
+</header>
+
+<div class="container">
+
+  <!-- Über -->
+  <section>
+    <h2>Über Pepes Pizzeria</h2>
+    <p>
+      Willkommen bei <strong>Pepes Pizzeria</strong> – Ihrer ersten Adresse für authentische, hausgemachte Pizza direkt in Dingolfing! 
+      Seit 2025 backen wir täglich mit frischen Zutaten und viel Leidenschaft. Ob Klassiker wie Margherita oder 
+      kreative Eigenkreationen – bei uns findet jeder seine Lieblingsscheibe.
+    </p>
+  </section>
+
+  <!-- Speisekarte -->
+  <section>
+    <h2>Unsere Speisekarte</h2>
+    <div class="menu-item">
+      <span><strong>Margherita</strong> (Tomate, Mozzarella, Basilikum)</span>
+      <span>7,50 €</span>
+    </div>
+    <div class="menu-item">
+      <span><strong>Salami</strong> (Tomate, Mozzarella, Salami)</span>
+      <span>8,50 €</span>
+    </div>
+    <div class="menu-item">
+      <span><strong>Funghi</strong> (Tomate, Mozzarella, Champignons)</span>
+      <span>8,00 €</span>
+    </div>
+    <div class="menu-item">
+      <span><strong>Prosciutto e Rucola</strong> (Tomate, Mozzarella, Schinken, Rucola)</span>
+      <span>9,50 €</span>
+    </div>
+    <div class="menu-item">
+      <span><strong>Pepes Spezial</strong> (Tomate, Mozzarella, Salami, Paprika, Peperoni)</span>
+      <span>10,00 €</span>
+    </div>
+  </section>
+
+  <!-- Bezug zu Dingolfing -->
+  <section>
+    <h2>Warum Dingolfing?</h2>
+    <p>
+      Unsere Pizzeria liegt mitten in der historischen Altstadt von Dingolfing, nur wenige Schritte vom 
+      Stadtplatz entfernt. Perfekt für einen Imbiss nach dem Bummeln durch die Fußgängerzone 
+      oder als kulinarischer Abschluss Ihres Besuchs im Weltkonzern BMW.
+    </p>
+  </section>
+
+  <!-- Öffnungszeiten -->
+  <section>
+    <h2>Öffnungszeiten</h2>
+    <div class="hours">
+      <div>Montag – Freitag:</div>
+      <div>11:00 – 22:00 Uhr</div>
+      <div>Samstag:</div>
+      <div>12:00 – 23:00 Uhr</div>
+      <div>Sonntag & Feiertage:</div>
+      <div>geschlossen*</div>
+    </div>
+    <p style="font-size:0.9rem; color:#555;"><em>*Sonntags bieten wir einen Lieferdienst über lokale Partner an.</em></p>
+  </section>
+
+  <!-- Kontakt -->
+  <section>
+    <h2>Kontakt & Adresse</h2>
+    <div class="contact">
+      <div><strong>Adresse</strong></div>
+      <div>Stadtplatz 5, 84130 Dingolfing</div>
+      <div><strong>Telefon</strong></div>
+      <div>+49 871 123 456</div>
+      <div><strong>E‑Mail</strong></div>
+      <div><a href="mailto:info@pepes-pizzeria.dingolf.ing" style="color:inherit;">info@pepes-pizzeria.dingolf.ing</a></div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p><strong>Hinweis:</strong> Diese Pizzeria existiert nicht wirklich – es handelt sich um eine Beispiel‑Seite für das 
+  Projekt <em>dingolf.ing</em> und dient ausschließlich Demonstrationszwecken.</p>
+</footer>
+
+</body>
+</html>
+
